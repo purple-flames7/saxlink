@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
@@ -20,6 +24,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 header h1 {
@@ -45,10 +50,11 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-  background-color: #ffd700; /* Gold */
-  color: #1b1b1b;
+  background: linear-gradient(to right, #7b1fa2, #ffd700);
+  color: #fff;
   text-align: center;
   padding: 4rem 2rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero h2 {
@@ -61,19 +67,33 @@ nav a:hover {
   margin-bottom: 2rem;
 }
 
+/* Buttons */
 .btn {
-  background-color: #7b1fa2;
-  color: white;
+  background-color: #ffd700;
+  color: #1b1b1b;
   padding: 0.8rem 1.5rem;
   text-decoration: none;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   font-size: 1rem;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
   background-color: #5e1282;
+  color: #fff;
+}
+
+/* Sections */
+section {
+  padding: 3rem 2rem;
+}
+
+section h2,
+section h3 {
+  color: #7b1fa2;
+  margin-bottom: 1rem;
 }
 
 /* Highlights */
@@ -87,18 +107,39 @@ nav a:hover {
 
 .highlights {
   display: flex;
-  justify-content: space-around;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: center;
   background-color: #f4f4f4;
-  text-align: center;
+  flex-wrap: wrap;
 }
-
+/* 
 .highlight {
-  width: 45%;
-}
+  flex: 1;
+  max-width: 250px;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+} */
 
-section h3 {
+/* section h3 {
   margin-bottom: 0.5rem;
   color: #7b1fa2;
+} */
+
+/* Cards */
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 /* Forms */
@@ -142,6 +183,24 @@ form button:hover {
   background-color: #5e1282;
 }
 
+/* BLOCKQUOTES (Testimonials) */
+blockquote {
+  background-color: #fff8e1;
+  border-left: 5px solid #ffd700;
+  margin: 2rem auto;
+  padding: 1rem 1.5rem;
+  max-width: 700px;
+  font-style: italic;
+  color: #555;
+}
+
+blockquote cite {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #7b1fa2;
+}
+
 /* Footer */
 footer {
   background-color: #2c2c2c;
@@ -156,6 +215,7 @@ footer {
   nav ul {
     flex-direction: column;
     gap: 0.5rem;
+    margin-top: 1rem;
   }
 
   .highlights {
@@ -166,5 +226,9 @@ footer {
   .highlight {
     width: 90%;
     margin-bottom: 1rem;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
   }
 }

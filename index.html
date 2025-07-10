@@ -1,68 +1,104 @@
-<!-- Main page -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SaxlinkPro - Language & Music School</title>
+    <title>Saxlink Pro | Learn Music & Languages</title>
+    <!-- Link to CSS Style sheet -->
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <!-- Link to CSS style sheet -->
-  <link rel="stylesheet" href="style.css" />
-
   <body>
     <!-- Header section -->
-    <header>
-      <h1>Saxlink Pro</h1>
-      <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="courses.html">Courses</a></li>
-          <li><a href="enroll.html">Enroll</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <button class="theme-toggle" aria-label="Toggle Theme">🌙</button>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="logo">Saxlink Pro</h1>
+
+        <!-- Hamburger Button -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+          ☰
+        </button>
+
+        <!-- Nav -->
+        <nav class="nav" id="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <!-- Main content section -->
-    <main class="section fade-in">
-      <section class="hero">
-        <h2>Speak. Play. Connect.</h2>
+    <section class="hero">
+      <div class="container">
+        <h2>Affordable, Quality Education for All</h2>
         <p>
-          Welcome to Saxlink Pro – your home for language and music mastery.
+          Master a new language or instrument in a supportive, creative
+          community.
         </p>
-        <a href="courses.html" class="btn">Explore Our Courses</a>
-      </section>
+        <a href="courses.html" class="btn">Explore Courses</a>
+      </div>
+    </section>
 
-      <section class="features">
-        <div class="feature">
-          <h3>🎶 Music Classes</h3>
-          <p>
-            Whether you're a beginner or experienced player, our piano, guitar,
-            drum, and vocal lessons are designed to inspire and elevate your
-            talent.
-          </p>
+    <section class="about-preview">
+      <div class="container">
+        <h3>Why Choose Saxlink Pro?</h3>
+        <p>
+          We believe everyone deserves access to excellent music and language
+          education. Our school is built on the principles of community,
+          affordability, and quality instruction. Join us and discover the joy
+          of learning!
+        </p>
+      </div>
+    </section>
+
+    <section class="courses-preview">
+      <div class="container">
+        <h3>Our Courses</h3>
+        <div class="courses-grid">
+          <div class="course-card">
+            <h4>Language Classes</h4>
+            <p>French, Spanish, Swahili, Lingala & more.</p>
+          </div>
+          <div class="course-card">
+            <h4>Music Lessons</h4>
+            <p>Piano, Guitar, Drums, Vocals & more.</p>
+          </div>
         </div>
-        <div class="feature">
-          <h3>🌍 Language Courses</h3>
+      </div>
+    </section>
+
+    <section class="testimonials-preview">
+      <div class="container">
+        <h3>What Our Students Say</h3>
+        <div class="testimonial">
           <p>
-            Learn to speak confidently with expert-led French, Spanish, Swahili,
-            Lingala, and English classes tailored to your pace and goals.
+            "Saxlink Pro helped me rediscover my love for music. The classes are
+            fun, affordable, and inspiring!"
           </p>
+          <span>– Amina, Vocal Student</span>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- <section>
-        <h3>Ready to begin?</h3>
-        <p>Join our vibrant community of learners and artists today.</p>
-        <a href="enroll.html" class="btn">Enroll Now</a>
-      </section> -->
-    </main>
+    <section class="cta">
+      <div class="container">
+        <h3>Ready to Learn?</h3>
+        <a href="contact.html" class="btn">Join the Saxlink Community</a>
+      </div>
+    </section>
 
-    <!-- Footer -->
-    <footer><p>&copy; 2025 Saxlink Pro. All rights reserved.</p></footer>
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2025 Saxlink Pro. All rights reserved.</p>
+        <div class="socials">
+          <a href="#">Facebook</a> | <a href="#">Instagram</a> |
+          <a href="#">WhatsApp</a>
+        </div>
+      </div>
+    </footer>
 
     <!-- JS link -->
     <script src="script.js"></script>

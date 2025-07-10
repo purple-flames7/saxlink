@@ -3,59 +3,101 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>About | Saxlink Pro</title>
+    <!-- Link to CSS Style sheet -->
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <!-- CSS link -->
-  <link rel="stylesheet" href="style.css" />
   <body>
-    <!-- header -->
-    <header>
-      <h1>Saxlink Pro</h1>
-      <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="courses.html">Courses</a></li>
-          <li><a href="enroll.html">Enroll</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container header-container">
+        <h1 class="logo">Saxlink Pro</h1>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+          ☰
+        </button>
+        <nav class="nav" id="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <!-- Main content -->
-    <main class="section">
-      <h2>About Saxlink Pro</h2>
-      <p>
-        Saxlink Pro is a creative space for anyone eager to express themselves
-        through language and music. Our mission is to nurture confident speakers
-        and skilled musicians in a fun, inclusive, and high-quality learning
-        environment.
-      </p>
+    <!-- Hero Section -->
+    <section class="hero about-hero">
+      <div class="container">
+        <h2>About Saxlink Pro</h2>
+        <p>
+          Where passion meets opportunity. We're redefining access to music and
+          language education.
+        </p>
+      </div>
+    </section>
 
-      <h2>Our Vision</h2>
-      <p>
-        To be a hub of artistic and linguistic excellence in Africa and beyond.
-      </p>
+    <!-- Our Story -->
+    <section class="about-section">
+      <div class="container">
+        <h3>Our Story</h3>
+        <p>
+          Saxlink Pro began with a simple idea: everyone deserves the chance to
+          learn and grow — no matter their background. We saw how music and
+          language could connect people, empower expression, and unlock
+          opportunities. So we created a space that’s affordable, inclusive, and
+          driven by quality.
+        </p>
+      </div>
+    </section>
 
-      <h2>Our Mission</h2>
-      <p>
-        To offer dynamic and culturally relevant training in music and
-        languages, empowering learners to connect, create, and grow.
-      </p>
+    <!-- Our Values -->
+    <section class="values-section">
+      <div class="container">
+        <h3>Our Core Values</h3>
+        <div class="values-grid">
+          <div class="value-card">
+            <h4>Affordability</h4>
+            <p>
+              We offer flexible pricing, scholarships, and community classes to
+              make learning accessible to all.
+            </p>
+          </div>
+          <div class="value-card">
+            <h4>Community</h4>
+            <p>
+              Our students and teachers form a vibrant, supportive family.
+              You’re not just learning — you’re joining a movement.
+            </p>
+          </div>
+          <div class="value-card">
+            <h4>Quality</h4>
+            <p>
+              We work with passionate, skilled instructors and a curriculum
+              that’s practical, fun, and future-focused.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <h2>Our Core Values</h2>
-      <ul>
-        <li>🎵 Creativity</li>
-        <li>💬 Communication</li>
-        <li>📚 Lifelong Learning</li>
-      </ul>
-    </main>
+    <!-- Call to Action -->
+    <section class="cta">
+      <div class="container">
+        <h3>Be part of the Saxlink Pro story. Start your journey today!</h3>
+        <a href="#" class="btn">Join Now</a>
+      </div>
+    </section>
 
     <!-- Footer -->
-    <footer><p>&copy; 2025 Saxlink Pro. All rights reserved.</p></footer>
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2025</p>
+      </div>
+    </footer>
 
-    <!-- JS link -->
+    <!-- Link to JS file -->
     <script src="script.js"></script>
   </body>
 </html>

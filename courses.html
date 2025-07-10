@@ -3,98 +3,157 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Courses | Saxlink Pro</title>
+    <!-- Link to CSS style sheet -->
+    <link rel="stylesheet" href="style.css" />
   </head>
-
-  <!-- Css Link -->
-  <link rel="stylesheet" href="style.css" />
-
   <body>
-    <!-- Header -->
-    <header>
-      <h1>Saxlink Pro</h1>
-      <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="courses.html">Courses</a></li>
-          <li><a href="enroll.html">Enroll</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <!-- Reuse Header -->
+    <header class="site-header">
+      <div class="container header-container">
+        <h1 class="logo">Saxlink Pro</h1>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+          ☰
+        </button>
+        <nav class="nav" id="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <!-- Main content -->
-    <main>
-      <h2>Our Courses</h2>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h2>Explore Our Courses</h2>
+        <p>
+          Learn a language. Master an instrument. Join a supportive, creative
+          community.
+        </p>
+      </div>
+    </section>
 
-      <section class="music-courses">
-        <h3>🎶 Music</h3>
-        <ul>
-          <div class="card">
-            <li>
-              <strong>Piano</strong> – From classical basics to modern
-              improvisation.
-            </li>
+    <!-- Language Courses -->
+    <section class="courses-section">
+      <div class="container">
+        <h3>Language Classes</h3>
+        <div class="courses-grid">
+          <div class="course-card">
+            <img src="" alt="French Class" />
+            <h4>French</h4>
+            <p>
+              Beginner to advanced levels. Fun, interactive lessons with native
+              speakers.
+            </p>
           </div>
-          <div class="card">
-            <li>
-              <strong>Guitar</strong> – Acoustic, electric, and everything in
-              between.
-            </li>
+          <div class="course-card">
+            <img src="" alt="Spanish Class" />
+            <h4>Spanish</h4>
+            <p>
+              Speak with confidence. Perfect for travel, work, and connection.
+            </p>
           </div>
-          <div class="card">
-            <li>
-              <strong>Drums</strong> – Master rhythm and timing in fun, hands-on
-              sessions.
-            </li>
+          <div class="course-card">
+            <img src="" alt="Swahili Class" />
+            <h4>Swahili</h4>
+            <p>
+              Celebrate East African culture through language. All levels
+              welcome.
+            </p>
           </div>
-          <div class="card">
-            <li>
-              <strong>Vocal Coaching</strong> – Strengthen your voice, pitch,
-              and performance.
-            </li>
+          <div class="course-card">
+            <img src="" alt="Lingala class" />
+            <h4>Lingala</h4>
+            <p>
+              Rhythmic, expressive, and powerful — learn the heart of Congolese
+              communication.
+            </p>
           </div>
-        </ul>
-      </section>
+          <div class="course-card">
+            <img src="" alt="English Class" />
+            <h4>English</h4>
+            <p>
+              Master reading, writing, speaking, and listening for global
+              confidence.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <section class="language-courses">
-        <h3>🌍 Languages</h3>
-        <ul>
-          <div class="card">
-            <li>
-              <strong>French</strong> – Beginner to advanced conversational
-              fluency.
-            </li>
+    <!-- Music Courses -->
+    <section class="courses-section">
+      <div class="container">
+        <h3>Music Classes</h3>
+        <div class="courses-grid">
+          <div class="course-card">
+            <img src="" alt="Piano class" />
+            <h4>Piano</h4>
+            <p>
+              From classical to contemporary, unlock the keys to musical
+              mastery.
+            </p>
           </div>
-          <div class="card">
-            <li>
-              <strong>Spanish</strong> – Speak with confidence in global
-              contexts.
-            </li>
-          </div>
-          <div class="card">
-            <li>
-              <strong>Swahili</strong> – Perfect for regional communication and
-              travel.
-            </li>
-          </div>
-          <div class="card">
-            <li>
-              <strong>Lingala</strong> – Connect with Congolese culture and
+          <div class="course-card">
+            <img src="" alt="Guitar Class" />
+            <h4>Guitar</h4>
+            <p>
+              Acoustic, electric, or bass — strum your way to soulful
               expression.
-            </li>
+            </p>
           </div>
-          <div class="card">
-            <li>
-              <strong>English</strong> – Grammar, pronunciation, and everyday
-              use.
-            </li>
+          <div class="course-card">
+            <img src="" alt="Drums Class" />
+            <h4>Drums</h4>
+            <p>
+              Feel the rhythm and build precision with expert drumming
+              instructors.
+            </p>
           </div>
-        </ul>
-      </section>
-    </main>
+          <div class="course-card">
+            <h4>Vocal Coaching</h4>
+            <img src="" alt="Vocal Coaching" />
+            <p>
+              Train your voice, grow your range, and find your unique sound.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container">
+        <h3>Find your voice. Learn a new language. Join Saxlink Pro today!</h3>
+        <a href="#" class="btn">Enroll Now</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2025 Saxlink Pro. All rights reserved.</p>
+        <div class="socials">
+          <a href="#">Facebook</a> | <a href="#">Instagram</a> |
+          <a href="#">WhatsApp</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Menu Toggle Script -->
+    <script>
+      const toggleBtn = document.getElementById("menu-toggle");
+      const nav = document.getElementById("main-nav");
+
+      toggleBtn.addEventListener("click", () => {
+        nav.classList.toggle("show");
+      });
+    </script>
 
     <!-- JS link -->
     <script src="script.js"></script>

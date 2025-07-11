@@ -3,56 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- Css LInk -->
+    <title>Contact | Saxlink Pro</title>
+    <!-- Link to CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
     <!-- Header -->
-    <header>
-      <h1>Saxlink Pro</h1>
-      <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="courses.html">Courses</a></li>
-          <li><a href="enroll.html">Enroll</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <header class="site-header">
+      <div class="container header-container">
+        <h1 class="logo">Saxlink Pro</h1>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+          ☰
+        </button>
+        <nav class="nav" id="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <!-- Main content -->
-    <main>
-      <h2>Contact Us</h2>
-      <p>
-        We’d love to hear from you! Reach out with questions, collaborations, or
-        just to say hi.
-      </p>
+    <!-- Hero -->
+    <section class="hero contact-hero">
+      <div class="container">
+        <h2>Get in Touch</h2>
+        <p>Have questions? Want to join us? We're here to help.</p>
+      </div>
+    </section>
 
-      <ul>
-        <li><strong>Email:</strong> info@saxlinkpro.com</li>
-        <li><strong>Phone:</strong> +254 712 345 678</li>
-        <li><strong>Location:</strong> Nairobi, Kenya</li>
-      </ul>
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <div class="container contact-grid">
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <h3>Send Us a Message</h3>
+          <form action="#" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
 
-      <form action="#" method="POST">
-        <label for="your-name">Your Name</label>
-        <input type="text" id="your-name" name="your-name" required />
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
 
-        <label for="your-email">Your Email</label>
-        <input type="email" id="your-email" name="your-email" required />
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5"></textarea>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
 
-        <button type="submit">Send Message</button>
-      </form>
-    </main>
+        <!-- Direct Contact Info -->
+        <div class="contact-info">
+          <h3>Contact Details</h3>
+          <p><strong>Email:</strong> info@saxlinkpro.com</p>
+          <p><strong>Phone:</strong> +254 712 345 678</p>
+          <p><strong>WhatsApp:</strong> +254 700 000 000</p>
 
-    <!-- JS link -->
+          <h4>Follow Us</h4>
+          <div class="socials">
+            <a href="#">Facebook</a><br />
+            <a href="#">Instagram</a><br />
+            <a href="#">TikTok</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2025 Saxlink Pro. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!--Link to JS file-->
     <script src="script.js"></script>
   </body>
 </html>
